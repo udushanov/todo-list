@@ -10,7 +10,7 @@
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script defer scr="app.js"></script>
+    <script defer src="app.js"></script>
 </head>
 <body>
     <header>
@@ -18,10 +18,15 @@
     </header>
     <main>
         <form class="todo-form">
-            <input class="todo-input" type="text">
-            <button class="btn-add btn" type="submit">
-                <i class="fa-solid fa-circle-plus"></i>
-            </button>
+            <input class="todo-input" type="text" maxlength="30">
+            <div class="todo-btns">
+                <button class="btn-clear btn" type="submit">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+                <button class="btn-add btn" type="submit">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </button>
+            </div>
         </form>
         <ul class="todo-list"></ul>
     </main>
