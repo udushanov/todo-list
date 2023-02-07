@@ -22,7 +22,7 @@ body {
 
 .todo-form {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .todo-input {
@@ -46,6 +46,7 @@ body {
     position: absolute;
     right: 0.5rem;
     top: 0.4rem;
+    display: none;
 }
 
 .fa-solid {
@@ -76,6 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255, 0.3);
+    height: 2.5rem;
     margin-top: 1rem;
     padding: 0.7rem 0.5rem;
 }
@@ -83,4 +85,26 @@ body {
 .todo-item-done {
     display: flex;
     gap: 0.5rem;
+}
+
+.alert-message {
+    display: none;
+    font-size: 0.8rem;
+    color: #ff2121;
+}
+
+.fa-circle {
+    color: transparent;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.show {
+    display: block;
+}
+
+.checked {
+    text-decoration: line-through;
 }
