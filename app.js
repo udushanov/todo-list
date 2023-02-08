@@ -87,13 +87,7 @@ document.addEventListener('click', (event) => {
     if (target.classList[1] === 'fa-circle-minus') {
         const todo = target.parentElement.parentElement;
         todo.remove();
-        // todo.classList.add('disappearing');
     }
 
     return;
 });
-
-//localstorage
-//infinite animation
-//date
-//sort with storage
